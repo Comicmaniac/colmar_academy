@@ -1,3 +1,8 @@
+* {
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
   font-size: 16px;
@@ -5,14 +10,335 @@ html {
 
 /* Header */
 
+
+
 /* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: white;
+}
+
+.logodeskdiv {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logophonediv {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .logophonediv {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .logodeskdiv {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
 
 /* Learn something banner */
 
+.banner {
+  background-color: silver;
+  display: flex;
+}
+
+.image {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image video {
+  width: 100%
+}
+
+.bannertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 5rem;
+}
+
+.startbutton {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+
+  .bannertext {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .startbutton {
+    margin-bottom: 2rem;
+  }
+}
+
 /* News */
+
+.news {
+  display: flex;
+  background-color: white;
+}
+
+.bimage {
+  width: 100%;
+}
+
+.newscategories {
+  width: 40%;
+  padding-bottom: 2rem;
+}
+
+.tidbit {
+  display: flex;
+  padding: 1rem;
+  height: 13rem;
+}
+
+.tidbittext {
+  padding-left: 1rem;
+  flex: 0 0 65%;
+  max-width: 100%;
+}
+
+.desktopimg {
+  max-width: 100%;
+  height:auto;
+}
+
+.orentationdate{
+  margin-top: 1rem;
+}
+
+.guestlecture {
+  background-color: silver;
+}
+
+
+@media only screen and (min-width: 650px) {
+  .mobileimg {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .aimage {
+    display: none;
+  }
+
+  .desktopimg {
+    display: none;
+  }
+
+  .newscategories {
+    width: 100%;
+  }
+
+  .tidbit {
+    flex-direction: column;
+    height: auto;
+  }
+
+   .picture {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .picture img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .orentationdate {
+    margin-top: 0;
+  }
+
+  .guestlecture {
+    background-color: white;
+  }
+}
 
 /* Start learing */
 
+.start_learning {
+  background-color: silver;
+}
+
+.title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.course {
+  width: 25%;
+  background-color: white;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.course p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .start_learning {
+    background-color: white;
+  }
+
+  .title {
+    padding-bottom: 1rem;
+  }
+
+  .courses {
+    width: 100%;
+    margin: 0;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course h4 {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 2rem;
+    background-color: silver;
+  }
+
+  .course p {
+    display: none;
+  }
+}
+
 /* Thesis exhibit */
 
+.thesis_exhibit {
+  background-color: white;
+}
+
+.exhibits {
+  display: flex;
+  }
+
+.video {
+  width: 60%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.fisma {
+  background-color: silver;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .video {
+    width: 100%;
+    padding: 0;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image h4 {
+    display: none;
+  }
+
+  .image p {
+    display: none;
+  }
+
+  .thesisnews, .fisma, .nowandthen {
+    display: none;
+  }
+}
+
 /* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .footright {
+    display: none;
+  }
+}
