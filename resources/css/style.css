@@ -4,13 +4,29 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 16px;
+  color: rgb(25, 65, 65);
 }
 
-/* Header */
 
+a:link {
+  text-decoration: none;
+  color: rgb(50, 106, 236);
+}
 
+a:visited {
+  text-decoration: none;
+  color: rgb(149, 38, 197);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
 
 /* Navigation bar */
 nav {
@@ -18,6 +34,14 @@ nav {
   justify-content: space-between;
   padding: 1rem 1.5rem;
   background-color: white;
+}
+
+.logotext:link {
+  color: black;
+}
+
+.logotext:visited {
+  color: black;
 }
 
 .logodeskdiv {
@@ -63,14 +87,14 @@ nav {
 /* Learn something banner */
 
 .banner {
-  background-color: silver;
+  background-color: rgb(80, 130, 130);
   display: flex;
 }
 
 .image {
   width: 60%;
   height: auto;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1.5rem 0 1.5rem;
 }
 
 .image img {
@@ -86,15 +110,45 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-right: 5rem;
+  margin-right: 10rem;
+  max-width: 28rem;
 }
 
-.startbutton {
+.bannertext h1 {
+  color: rgb(90, 252, 240);
+}
+
+.bannertext p {
+  color: rgb(90, 252, 240);
+}
+
+#startbutton {
   color: white;
-  background-color: gray;
+  background-color: rgb(21, 73, 73);
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  max-width: 80%;
+  border-radius: 5px;
+  transition: background-color 600ms;
+  transition: color 400ms;
+}
+
+#startbutton:link {
+    color: white;
+}
+
+#startbutton:visited {
+  color: rgb(149, 38, 197);
+  text-decoration: none;
+}
+
+#startbutton:hover {
+  background-color: rgb(90, 252, 240);
+}
+
+#startbutton:active {
+  color: rgb(61, 210, 210);
 }
 
 @media only screen and (max-width: 650px) {
@@ -112,7 +166,7 @@ nav {
     margin-right: 1rem;
   }
 
-  .startbutton {
+  #startbutton {
     margin-bottom: 2rem;
   }
 }
@@ -126,6 +180,10 @@ nav {
 
 .bimage {
   width: 100%;
+}
+
+#quotee {
+  font-family: 'Gothic+A1', sans-serif;
 }
 
 .newscategories {
@@ -143,6 +201,7 @@ nav {
   padding-left: 1rem;
   flex: 0 0 65%;
   max-width: 100%;
+  overflow: scroll;
 }
 
 .desktopimg {
@@ -151,13 +210,22 @@ nav {
 }
 
 .orentationdate{
-  margin-top: 1rem;
+  padding-top: 2.5rem;
 }
 
 .guestlecture {
-  background-color: silver;
+  background-color: rgb(80, 130, 130);
+  color: rgb(90, 252, 240);
 }
 
+.orentationdate {
+  border-left: 1px solid rgb(80, 130, 130);
+  border-bottom: 1px solid rgb(80, 130, 130);
+}
+
+.ourcampus {
+  border-left: 1px solid rgb(80, 130, 130);
+}
 
 @media only screen and (min-width: 650px) {
   .mobileimg {
@@ -201,19 +269,24 @@ nav {
 
   .guestlecture {
     background-color: white;
+    color: rgb(25, 65, 65);
   }
 }
 
 /* Start learing */
 
 .start_learning {
-  background-color: silver;
+  background-color: rgb(80, 130, 130);
 }
 
 .title {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.start {
+  color: rgb(90, 252, 240);
 }
 
 .courses {
@@ -225,7 +298,8 @@ nav {
 }
 
 .course {
-  width: 25%;
+  min-width: 23rem;
+  max-width: 25%;
   background-color: white;
   padding-bottom: 1.5rem;
   margin-left: 1rem;
@@ -238,6 +312,11 @@ nav {
 }
 
 .course h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.course a {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -257,6 +336,10 @@ nav {
     padding-bottom: 1rem;
   }
 
+  .start {
+    color: rgb(25, 65, 65);
+  }
+
   .courses {
     width: 100%;
     margin: 0;
@@ -266,6 +349,7 @@ nav {
     width: 100%;
     margin: 0;
     padding: 0;
+    color: rgb(90, 252, 240);
   }
 
   .course img {
@@ -275,7 +359,11 @@ nav {
   .course h4 {
     margin: 1rem 0.5rem 1rem 0.5rem;
     padding: 2rem;
-    background-color: silver;
+    background-color: rgb(80, 130, 130);
+  }
+
+  .course a {
+    display: none;
   }
 
   .course p {
@@ -300,8 +388,9 @@ nav {
 }
 
 .fisma {
-  background-color: silver;
+  background-color: rgb(80, 130, 130);
   margin-top: 2rem;
+  color: rgb(90, 252, 240);
 }
 
 @media only screen and (max-width: 650px) {
